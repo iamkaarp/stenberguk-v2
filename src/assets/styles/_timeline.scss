@@ -1,0 +1,21 @@
+#timeline {
+  @apply h-full flex overflow-x-auto pl-12;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  #events {
+    @apply flex flex-nowrap items-center justify-center;
+
+    .event {
+      @apply w-full;
+    }
+  }
+}
+
+@screen md {
+  .event {
+    width: 350px;
+  }
+}
